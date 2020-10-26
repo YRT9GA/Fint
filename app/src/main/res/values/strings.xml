@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Fint</string>
+    <string name="main">Главная</string>
+    <string name="analytics">Аналитика</string>
+    <string name="plan">План</string>
+    <string name="profile">Профиль</string>
 </resources>
