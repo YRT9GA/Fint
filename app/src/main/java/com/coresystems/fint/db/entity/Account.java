@@ -9,7 +9,7 @@ public class Account {
 
     @PrimaryKey
     @ColumnInfo(name = "id_account")
-    private final long idAccount;
+    private long idAccount;
     @ColumnInfo(name = "id_cur")
     private int idCur;
     @ColumnInfo(name = "account_name")
@@ -17,7 +17,4 @@ public class Account {
     @ColumnInfo(name = "current_value")
     private long CurrentValue;
 
-    public Account(long idAccount) {
-        this.idAccount = idAccount;
-    }
 }
