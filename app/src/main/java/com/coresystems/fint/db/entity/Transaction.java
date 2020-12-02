@@ -11,6 +11,7 @@ import java.util.Date;
 public class Transaction {
 
     @PrimaryKey
+    @ColumnInfo(name = "id_transaction")
     private final long idTransaction;
     @ColumnInfo(name = "id_type_tr")
 //    @ForeignKey(entity = , parentColumns = , childColumns = )

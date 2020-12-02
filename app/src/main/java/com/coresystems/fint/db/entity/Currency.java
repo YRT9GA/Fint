@@ -9,9 +9,15 @@ public class Currency {
 
     @PrimaryKey
     @ColumnInfo(name = "cur_code")
-    public String curCode;
+    private String curCode;
     @ColumnInfo(name = "cur_short_code")
-    public String curShortName;
+    private String curShortName;
     @ColumnInfo(name = "cur_full_name")
-    public String curFullName;
+    private String curFullName;
+
+    public Currency(String curCode, String curShortName, String curFullName) {
+        this.curCode = curCode;
+        this.curShortName = curShortName;
+        this.curFullName = curFullName;
+    }
 }

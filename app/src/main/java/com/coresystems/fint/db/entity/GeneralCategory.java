@@ -11,13 +11,22 @@ public class GeneralCategory {
 
     @PrimaryKey
     @ColumnInfo(name = "id_general_category")
-    public long idGeneralCategory;
+    private long idGeneralCategory;
     @ColumnInfo(name = "id_category_one")
-    public long idCategoryOne;
+    private long idCategoryOne;
     @ColumnInfo(name = "id_category_two")
-    public long idCategoryTwo;
+    private long idCategoryTwo;
     @ColumnInfo(name = "is_active")
-    public boolean isActive;
+    private boolean isActive;
     @ColumnInfo(name = "icon")
-    public Image icon;
+    private Image icon;
+
+    public GeneralCategory(long idGeneralCategory, long idCategoryOne, long idCategoryTwo,
+                           boolean isActive, Image icon) {
+        this.idGeneralCategory = idGeneralCategory;
+        this.idCategoryOne = idCategoryOne;
+        this.idCategoryTwo = idCategoryTwo;
+        this.isActive = isActive;
+        this.icon = icon;
+    }
 }

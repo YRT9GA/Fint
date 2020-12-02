@@ -1,5 +1,6 @@
 package com.coresystems.fint.db.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -9,7 +10,12 @@ public class TransactionType {
 
     @PrimaryKey
     @ColumnInfo(name = "id_type_tr")
-    public int idTypeTr;
+    private int idTypeTr;
     @ColumnInfo(name = "type_name")
-    public String typeName;
+    private String typeName;
+
+    public TransactionType(int idTypeTr, @NonNull String typeName) {
+        this.idTypeTr = idTypeTr;
+        this.typeName = typeName;
+    }
 }

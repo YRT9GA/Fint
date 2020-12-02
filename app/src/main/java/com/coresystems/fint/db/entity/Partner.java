@@ -9,7 +9,12 @@ public class Partner {
 
     @PrimaryKey
     @ColumnInfo(name = "id_partner")
-    public long idPartner;
+    private long idPartner;
     @ColumnInfo(name = "partner_name")
-    public String partnerName;
+    private String partnerName;
+
+    public Partner(long idPartner, String partnerName) {
+        this.idPartner = idPartner;
+        this.partnerName = partnerName;
+    }
 }

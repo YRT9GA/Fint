@@ -15,6 +15,12 @@ public class Account {
     @ColumnInfo(name = "account_name")
     private String accountName;
     @ColumnInfo(name = "current_value")
-    private long CurrentValue;
+    private long currentValue;
 
+    public Account(long idAccount, int idCur, String accountName, long currentValue) {
+        this.idAccount = idAccount;
+        this.idCur = idCur;
+        this.accountName = accountName;
+        this.currentValue = currentValue;
+    }
 }
