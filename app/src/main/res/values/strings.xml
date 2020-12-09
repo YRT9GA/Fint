@@ -4,4 +4,92 @@
     <string name="analytics">Аналитика</string>
     <string name="plan">План</string>
     <string name="profile">Профиль</string>
+    <string name="category1">Категория 1</string>
+    <string name="cash">Наличные</string>
+    <string name="debt">Дебетовые карты</string>
+    <string name="cred_cards">Кредитные карты</string>
+    <string name="bank_acc">Банковские счета</string>
+    <string name="exc_rates">Валютные счета</string>
+
+
+    <string-array name="category">
+        <item>Наличные</item>
+        <item>Дебетовые карты</item>
+        <item>Кредитные карты</item>
+        <item>Банковские счета</item>
+        <item>Валютные счета</item>
+    </string-array>
+
+    <string-array name="cash_acc">
+        <item>Кошелек</item>
+        <item>Сертификаты</item>
+        <item>Заначка</item>
+    </string-array>
+
+    <string-array name="cash_acc_sum">
+        <item>2 566 ₽</item>
+        <item>3 000 ₽</item>
+        <item>300 000 ₽</item>
+    </string-array>
+
+    <string-array name="debt_acc">
+        <item>Сбербанк</item>
+        <item>Тинькофф</item>
+    </string-array>
+
+    <string-array name="debt_acc_sum">
+        <item>25 456 ₽</item>
+        <item>18 769 ₽</item>
+    </string-array>
+
+    <string-array name="cred_acc">
+        <item>Альфа</item>
+        <item>Тинькофф</item>
+    </string-array>
+
+    <string-array name="cred_acc_sum">
+        <item>100 000 ₽ </item>
+        <item>150 000 ₽ </item>
+    </string-array>
+
+    <string-array name="cred_lim">
+        <item>лимит: 110 000 ₽</item>
+        <item>лимит: 150 000 ₽</item>
+    </string-array>
+
+    <string-array name="bank_acc">
+        <item>Открытие Брокер</item>
+        <item>Райф НС</item>
+    </string-array>
+
+    <string-array name="bank_acc_sum">
+        <item>1 256 456 ₽</item>
+        <item>2 644 897 ₽</item>
+    </string-array>
+
+    <string-array name="cur_acc">
+        <item>Газпромбанк Евро</item>
+        <item>Газпромбанк Доллар</item>
+    </string-array>
+
+    <string-array name="cur_sum">
+        <item>1 200 €</item>
+        <item>2 800 $</item>
+    </string-array>
+
+    <string-array name="cur_exc">
+        <item>курс: 89,65 ₽</item>
+        <item>курс: 75,36 ₽</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+
+
 </resources>
