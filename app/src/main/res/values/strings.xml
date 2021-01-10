@@ -10,6 +10,9 @@
     <string name="cred_cards">Кредитные карты</string>
     <string name="bank_acc">Банковские счета</string>
     <string name="exc_rates">Валютные счета</string>
+    <string name="acc">Счет</string>
+    <string name="data">Дата</string>
+    <string name="category">Категория</string>
 
 
     <string-array name="category">
