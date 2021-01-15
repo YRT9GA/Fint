@@ -13,6 +13,8 @@
     <string name="acc">Счет</string>
     <string name="data">Дата</string>
     <string name="category">Категория</string>
+    <string name="sum">Сумма</string>
+    <string name="Commentary">  Комментарий</string>
 
 
     <string-array name="category">
