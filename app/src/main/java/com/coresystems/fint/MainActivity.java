@@ -4,9 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.coresystems.fint.Accounting.IncomeAdd;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button floatbtn;
 
 
     //создаем тестовые массив для ресайкла
@@ -54,9 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
         // создаем RecyclerView
         RecyclerView cashRecyclerView = findViewById(R.id.cash_recycler_View);
         CashAdapter cashAdapter = new CashAdapter(this, str1, str2);
@@ -85,9 +89,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         return;
+    }
+
+        @Override
+        public void onClick(View view){
+            Intent intent = new Intent(MainActivity.this, IncomeAdd.class);
+            startActivity(intent);
+        }
+
+
+
+
+
+
+
 
 
     }
 
-
-}

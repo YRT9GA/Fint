@@ -378,6 +378,7 @@
 
         android:backgroundTint="#03A9F4"
         android:clickable="true"
+        android:onClick="onClick"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
         app:layout_constraintLeft_toLeftOf="parent"
