@@ -11,7 +11,7 @@ public class IncomeAdd extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.income_add);
+        setContentView(R.layout.activity_intro);
 
     }
 }
