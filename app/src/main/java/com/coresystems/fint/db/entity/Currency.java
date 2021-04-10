@@ -1,3 +1,4 @@
+/*
 package com.coresystems.fint.db.entity;
 
 import androidx.room.ColumnInfo;
@@ -20,4 +21,9 @@ public class Currency {
         this.curShortName = curShortName;
         this.curFullName = curFullName;
     }
+
+    public String getCurCode() {
+        return curCode;
+    }
 }
+*/

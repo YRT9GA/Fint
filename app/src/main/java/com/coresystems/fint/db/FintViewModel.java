@@ -1,3 +1,4 @@
+/*
 package com.coresystems.fint.db;
 
 import android.app.Application;
@@ -32,3 +33,4 @@ public class FintViewModel extends AndroidViewModel {
 
 
 }
+*/

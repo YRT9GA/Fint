@@ -1,3 +1,4 @@
+/*
 package com.coresystems.fint.db;
 
 import android.content.Context;
@@ -74,3 +75,4 @@ public abstract class FintDatabase extends RoomDatabase {
 //        abstract public SongAlbumDao getSongAlbumDao();
 
 }
+*/

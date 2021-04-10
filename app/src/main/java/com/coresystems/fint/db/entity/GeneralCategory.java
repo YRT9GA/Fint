@@ -1,3 +1,4 @@
+/*
 package com.coresystems.fint.db.entity;
 
 import android.media.Image;
@@ -30,3 +31,4 @@ public class GeneralCategory {
         this.icon = icon;
     }
 }
+*/
