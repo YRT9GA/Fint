@@ -18,6 +18,8 @@
     <string name="incomeadd">Добавить доход</string>
 
 
+
+
     <string-array name="category">
         <item>Наличные</item>
         <item>Дебетовые карты</item>
