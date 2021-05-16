@@ -32,6 +32,27 @@
             android:theme="@style/AppTheme">
 
         </activity>
+
+        <activity android:name=".Accounting.OutcomeAdd"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/outcomeadd"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Accounting.LoanRaise"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/loanraise"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Accounting.LoanRepay"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/loanrepay"
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>
