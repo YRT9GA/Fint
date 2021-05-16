@@ -11,6 +11,7 @@
         android:id="@+id/action_analytics"
         android:title="@string/analytics"
         android:icon="@drawable/ic_analytics"
+
         />
 
     <item
@@ -23,11 +24,12 @@
         android:id="@+id/action_plan"
         android:title="@string/plan"
         android:icon="@drawable/ic_plan"
+
         />
 
     <item
         android:id="@+id/action_profile"
-        android:title="@string/profile"
+        android:title="@string/settings"
         android:icon="@drawable/ic_profile"
         />
 
