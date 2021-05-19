@@ -12,6 +12,11 @@
         >
         <activity android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".IntroActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,9 +24,32 @@
             </intent-filter>
         </activity>
 
+
+
         <activity android:name=".Accounting.IncomeAdd"
             android:parentActivityName=".MainActivity"
             android:label="@string/incomeadd"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Accounting.OutcomeAdd"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/outcomeadd"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Accounting.LoanRaise"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/loanraise"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Accounting.LoanRepay"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/loanrepay"
             android:theme="@style/AppTheme">
 
         </activity>
