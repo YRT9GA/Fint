@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#5C6170">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/group">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:font="@font/rubikregular"
+            android:text="FINT"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="166dp"
+            android:textSize="36sp"
+            android:layout_marginTop="16dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="Email"
+            android:textSize="14sp"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:text="elon_musk@mars.com">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="Пароль"
+            android:textSize="14sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:ems="4"
+                android:inputType="textPassword"
+                android:text="password">
+
+            </EditText>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="253dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/eyes"></ImageView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_add_bg"
+            android:text="Вход"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/or"></ImageView>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/btn_gray2"
+            android:text="Регистрация"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
