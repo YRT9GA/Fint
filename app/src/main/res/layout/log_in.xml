@@ -6,7 +6,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
+<<<<<<< Updated upstream
         android:layout_height="match_parent"
+=======
+        android:layout_height="wrap_content"
+>>>>>>> Stashed changes
         android:layout_weight="1"
         android:background="#5C6170">
 
@@ -14,8 +18,16 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< Updated upstream
             android:layout_marginLeft="138dp"
             android:layout_marginTop="85dp"
+=======
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+>>>>>>> Stashed changes
             android:src="@drawable/group">
 
         </ImageView>
@@ -26,7 +38,12 @@
             android:font="@font/rubikregular"
             android:text="FINT"
             android:textColor="#FFFFFF"
+<<<<<<< Updated upstream
             android:layout_marginLeft="166dp"
+=======
+            android:layout_marginLeft="146dp"
+            android:layout_marginBottom="20dp"
+>>>>>>> Stashed changes
             android:textSize="36sp"
             android:layout_marginTop="16dp">
 
@@ -37,7 +54,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+<<<<<<< Updated upstream
         android:layout_height="match_parent"
+=======
+        android:layout_height="wrap_content"
+>>>>>>> Stashed changes
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -69,7 +90,11 @@
             android:textSize="14sp"></TextView>
 
         <LinearLayout
+<<<<<<< Updated upstream
             android:layout_width="wrap_content"
+=======
+            android:layout_width="match_parent"
+>>>>>>> Stashed changes
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -85,6 +110,7 @@
             </EditText>
 
             <ImageView
+<<<<<<< Updated upstream
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="253dp"
@@ -92,6 +118,17 @@
                 android:src="@drawable/eyes"></ImageView>
         </LinearLayout>
 
+=======
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="12dp"
+
+                android:src="@drawable/eyes"></ImageView>
+        </LinearLayout>
+
+
+>>>>>>> Stashed changes
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
@@ -119,7 +156,12 @@
             android:textColor="#FFFFFF" />
 
 
+<<<<<<< Updated upstream
     </LinearLayout>
 
+=======
+
+</LinearLayout>
+>>>>>>> Stashed changes
 
 </LinearLayout>
