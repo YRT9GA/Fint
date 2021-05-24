@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, language);
 
-        listView.setAdapter(adapter);
+//        listView.setAdapter(adapter);
 
 
 
