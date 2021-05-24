@@ -266,10 +266,10 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/cash_recycler_View"
-                app:layout_constraintTop_toBottomOf="@+id/tv_cash_head"
-                app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cash_head" />
 
             <TextView
                 android:layout_width="wrap_content"
