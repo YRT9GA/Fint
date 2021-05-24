@@ -20,6 +20,7 @@
     <string name="loanrepay">Возврат займа</string>
     <string name="loanraise">Привлечение займа</string>
     <string name="settings">Настройки</string>
+    <string name="language">Язык</string>
 
 
     <string-array name="category">
