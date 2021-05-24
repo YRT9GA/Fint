@@ -28,6 +28,17 @@ import com.coresystems.fint.NavigationFragments.FragmentProfile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+
+
+
+
+
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
     Button floatbtn;
@@ -57,8 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +85,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         final String[] ActionNamesArray = {"Расход", "Доход", "Возврат займа", "Привлечение займа"};
 
+        // получаем экземпляр элемента ListView
+        ListView listView = findViewById(R.id.languagelist);
 
+// определяем строковый массив
+        final String[] language = getResources().getStringArray(R.array.language);
+
+// используем адаптер данных
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, language);
+
+//        listView.setAdapter(adapter);
 
 
 
@@ -254,9 +273,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                    .replace(R.id.nav_container, fragmentProfile)
 //                    .commit();
 //    }
-
-
-
 
 
 
