@@ -53,6 +53,14 @@
             android:theme="@style/AppTheme">
 
         </activity>
+
+
+        <activity android:name=".LanguageActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/language"
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>
