@@ -61,6 +61,12 @@
             android:theme="@style/AppTheme">
 
         </activity>
+        <activity android:name=".CurrencyList"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/сurrency"
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>
