@@ -54,6 +54,18 @@
 
         </activity>
 
+    <activity android:name=".LoginActivity">
+
+    </activity>
+
+        <activity android:name=".LanguageActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/settings"
+            android:theme="@style/NewTheme">
+
+
+        </activity>
+
     </application>
 
 </manifest>
