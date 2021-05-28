@@ -20,8 +20,6 @@
     <string name="loanrepay">Возврат займа</string>
     <string name="loanraise">Привлечение займа</string>
     <string name="settings">Настройки</string>
-    <string name="language">Язык</string>
-    <string name="сurrency">Валюта</string> />
 
 
     <string-array name="category">
@@ -103,12 +101,6 @@
     <string-array name="language">
         <item>Русский</item>
         <item>Английский</item>
-    </string-array>
-
-    <string-array name="сurrency">
-        <item>Рубль</item>
-        <item>Евро</item>
-        <item>Доллар</item>
     </string-array>
 
 
