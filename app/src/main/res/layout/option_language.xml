@@ -5,12 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-  <ListView
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      android:id="@+id/languagelist"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"/>
+    <ListView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/languagelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
     <Button
@@ -25,6 +25,5 @@
 
         android:text="Сохранить"
         android:textColor="#FFFFFF" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
