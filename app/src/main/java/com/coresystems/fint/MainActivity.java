@@ -4,18 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
-import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.coresystems.fint.Accounting.IncomeAdd;
 import com.coresystems.fint.Accounting.LoanRaise;
@@ -24,12 +20,10 @@ import com.coresystems.fint.Accounting.OutcomeAdd;
 import com.coresystems.fint.NavigationFragments.FragmentAnalytics;
 import com.coresystems.fint.NavigationFragments.FragmentHome;
 import com.coresystems.fint.NavigationFragments.FragmentPlan;
-import com.coresystems.fint.NavigationFragments.FragmentProfile;
+import com.coresystems.fint.NavigationFragments.FragmentSettings;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
-import android.app.Activity;
-import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -175,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             selectedFragment = new FragmentPlan();
                             break;
                         case R.id.action_profile:
-                            selectedFragment = new FragmentProfile();
+                            selectedFragment = new FragmentSettings();
                             break;
                     }
 
