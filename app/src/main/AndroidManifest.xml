@@ -54,19 +54,6 @@
 
         </activity>
 
-
-        <activity android:name=".LanguageActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/language"
-            android:theme="@style/AppTheme">
-
-        </activity>
-        <activity android:name=".CurrencyList"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/сurrency"
-            android:theme="@style/AppTheme">
-
-        </activity>
     </application>
 
 </manifest>
