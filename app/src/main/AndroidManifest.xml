@@ -60,10 +60,41 @@
 
         <activity android:name=".LanguageActivity"
             android:parentActivityName=".MainActivity"
-            android:label="@string/settings"
+            android:label="@string/language"
             android:theme="@style/NewTheme">
 
 
+        </activity>
+        <activity android:name=".PasswordActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/password"
+            android:theme="@style/NewTheme">
+
+
+        </activity>
+        <activity android:name=".CurrencyActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/сurrency"
+            android:theme="@style/NewTheme">
+        </activity>
+
+        <activity android:name=".CattegoryActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/сattegory"
+            android:theme="@style/NewTheme">
+        </activity>
+
+
+        <activity android:name=".ProfileActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/profile"
+            android:theme="@style/NewTheme">
+        </activity>
+
+        <activity android:name=".AccountActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/account"
+            android:theme="@style/NewTheme">
         </activity>
 
     </application>

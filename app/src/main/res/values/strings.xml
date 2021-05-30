@@ -21,7 +21,10 @@
     <string name="loanraise">Привлечение займа</string>
     <string name="settings">Настройки</string>
     <string name="language">Язык</string>
-    <string name="сurrency">Валюта</string> />
+    <string name="password">Пароль</string>
+    <string name="сurrency">Валюта по умолчанию</string>
+    <string name="account">Счет</string>
+    <string name="сattegory">Категории</string>/>
 
 
     <string-array name="category">
@@ -111,7 +114,30 @@
         <item>Доллар</item>
     </string-array>
 
+    <string-array name="password">
+        <item>Установить пароль</item>
+        <item>Сбросить пароль</item>
+    </string-array>
 
+    <string-array name="cattegory">
+        <item>Категория 1</item>
+        <item>Категория 1.1</item>
+        <item>Категория 1.2</item>
+        <item>Категория 2</item>
+        <item>Категория 2.1</item>
+        <item>Категория 2.2</item>
+    </string-array>
+
+    <string-array name="profile">
+        <item>Профиль 1</item>
+        <item>Профиль 2</item>
+
+    </string-array>
+    <string-array name="account">
+        <item>Счет 1</item>
+        <item>Счет 2</item>
+
+    </string-array>
 
 
 
