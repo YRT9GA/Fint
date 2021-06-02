@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,31 +12,41 @@
         android:layout_weight="1"
         android:background="#5C6170">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:layout_marginLeft="138dp"
-            android:layout_marginTop="55dp"
-            android:src="@drawable/group">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        </ImageView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:font="@font/rubikregular"
-            android:text="FINT"
-            android:textColor="#FFFFFF"
-            android:layout_marginLeft="166dp"
-            android:textSize="36sp"
-            android:layout_marginTop="16dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/group"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        </TextView>
+            </ImageView>
 
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="5dp"
+                android:font="@font/rubikregular"
+                android:text="FINT"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
@@ -88,8 +100,8 @@
             </EditText>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="253dp"
                 android:layout_marginTop="12dp"
                 android:src="@drawable/eyes"></ImageView>
@@ -116,6 +128,7 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_marginLeft="4dp"
+            android:layout_marginBottom="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="4dp"
             android:background="@drawable/btn_gray2"

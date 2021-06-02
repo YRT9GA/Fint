@@ -11,7 +11,7 @@ public class IncomeAdd extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.log_in);
+        setContentView(R.layout.fragment_income_add);
 
     }
 }
