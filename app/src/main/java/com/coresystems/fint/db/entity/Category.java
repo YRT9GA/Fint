@@ -1,4 +1,4 @@
-/*
+
 package com.coresystems.fint.db.entity;
 
 import androidx.room.ColumnInfo;
@@ -16,4 +16,4 @@ public class Category {
     @ColumnInfo(name = "name")
     public String name;
 }
-*/
+

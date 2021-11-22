@@ -1,3 +1,4 @@
+
 /*
 package com.coresystems.fint.db.entity;
 
@@ -19,8 +20,7 @@ public class GeneralCategory {
     private long idCategoryTwo;
     @ColumnInfo(name = "is_active")
     private boolean isActive;
-    @ColumnInfo(name = "icon")
-    private Image icon;
+
 
     public GeneralCategory(long idGeneralCategory, long idCategoryOne, long idCategoryTwo,
                            boolean isActive, Image icon) {
@@ -28,7 +28,8 @@ public class GeneralCategory {
         this.idCategoryOne = idCategoryOne;
         this.idCategoryTwo = idCategoryTwo;
         this.isActive = isActive;
-        this.icon = icon;
+
     }
 }
+
 */

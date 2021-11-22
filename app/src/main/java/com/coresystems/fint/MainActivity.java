@@ -4,22 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
-import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.coresystems.fint.Accounting.IncomeAdd;
-import com.coresystems.fint.Accounting.LoanRaise;
-import com.coresystems.fint.Accounting.LoanRepay;
+import com.coresystems.fint.Accounting.LoansActivity;
+import com.coresystems.fint.Accounting.TransferActivity;
 import com.coresystems.fint.Accounting.OutcomeAdd;
 import com.coresystems.fint.NavigationFragments.FragmentAnalytics;
 import com.coresystems.fint.NavigationFragments.FragmentHome;
@@ -28,8 +24,6 @@ import com.coresystems.fint.NavigationFragments.FragmentProfile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
-import android.app.Activity;
-import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -83,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(navListener);
 
-        final String[] ActionNamesArray = {"Расход", "Доход", "Возврат займа", "Привлечение займа"};
+        final String[] ActionNamesArray = {"Расход", "Доход", "Долг", "Перевод"};
 
         // получаем экземпляр элемента ListView
         ListView listView = findViewById(R.id.languagelist);
@@ -171,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         case R.id.action_analytics:
                             selectedFragment = new FragmentAnalytics();
                             break;
-                        case R.id.action_plan:
+                        case R.id.action_history:
                             selectedFragment = new FragmentPlan();
                             break;
                         case R.id.action_profile:
@@ -229,26 +223,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
         a_builder.setTitle("Выберите действие");
         a_builder.setItems(new CharSequence[]
-                        {"Расход", "Доход", "Возврат займа", "Привлечение займа"},
+                        {"Перевод", "Долг", "Доход", "Расход"},
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // The 'which' argument contains the index position
                         // of the selected item
                         switch (which) {
                             case 0:
-                                Intent intent = new Intent(MainActivity.this, OutcomeAdd.class);
+                                Intent intent = new Intent(MainActivity.this, TransferActivity.class);
                         startActivity(intent);
                             break;
                             case 1:
-                                Intent intent2 = new Intent(MainActivity.this, IncomeAdd.class);
+                                Intent intent2 = new Intent(MainActivity.this, LoansActivity.class);
                         startActivity(intent2);
                             break;
                             case 2:
-                                Intent intent3 = new Intent(MainActivity.this, LoanRepay.class);
+                                Intent intent3 = new Intent(MainActivity.this, IncomeAdd.class);
                         startActivity(intent3);
                             break;
                             case 3:
-                                Intent intent4 = new Intent(MainActivity.this, LoanRaise.class);
+                                Intent intent4 = new Intent(MainActivity.this, OutcomeAdd.class);
                         startActivity(intent4);
                             break;
                         }

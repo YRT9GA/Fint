@@ -3,27 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorBg">
 
     <ListView
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/accountlist"
-        android:layout_width="wrap_content"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
     <Button
+        android:id="@+id/add_acc_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/btn_add_bg"
-
-        android:text="Сохранить"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="#37474F"
+        android:text="Добавить счет"
         android:textColor="#FFFFFF" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,5 @@
 /*
+
 package com.coresystems.fint.db;
 
 import android.app.Application;
@@ -36,4 +37,5 @@ public class FintRepository {
         FintDatabase.databaseWriteExecutor.execute(() -> fintDao.insert(transaction));
     }
 }
+
 */

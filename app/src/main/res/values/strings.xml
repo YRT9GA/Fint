@@ -2,8 +2,9 @@
     <string name="app_name">Fint</string>
     <string name="main">Главная</string>
     <string name="analytics">Аналитика</string>
+    <string name="history">История</string>
     <string name="plan">План</string>
-    <string name="profile">Профиль</string>
+    <string name="profile">Настройки</string>
     <string name="category1">Категория 1</string>
     <string name="cash">Наличные</string>
     <string name="debt">Дебетовые карты</string>
@@ -17,8 +18,8 @@
     <string name="Commentary">  Комментарий</string>
     <string name="incomeadd">Добавить доход</string>
     <string name="outcomeadd">Добавить расход</string>
-    <string name="loanrepay">Возврат займа</string>
-    <string name="loanraise">Привлечение займа</string>
+    <string name="transfer">Перевод между счетами</string>
+    <string name="loans">Займы</string>
     <string name="settings">Настройки</string>
     <string name="language">Язык</string>
     <string name="password">Пароль</string>
@@ -120,12 +121,24 @@
     </string-array>
 
     <string-array name="cattegory">
-        <item>Категория 1</item>
-        <item>Категория 1.1</item>
-        <item>Категория 1.2</item>
-        <item>Категория 2</item>
-        <item>Категория 2.1</item>
-        <item>Категория 2.2</item>
+        <item>Питание</item>
+        <item> Транспорт</item>
+        <item>Хозяйство</item>
+        <item>Развлечения</item>
+        <item>Путешествия</item>
+        <item>Здоровье</item>
+        <item>Спорт</item>
+        <item>Образование</item>
+        <item>Внешний вид</item>
+        <item>Связь</item>
+        <item>Автомобиль</item>
+        <item>Хобби</item>
+        <item>Благотворительность</item>
+        <item>Прочие расходы</item>
+        <item>Зарплата</item>
+        <item>Стипендия</item>
+        <item>Оказание услуг</item>
+        <item>Прочие доходы</item>
     </string-array>
 
     <string-array name="profile">
@@ -134,8 +147,9 @@
 
     </string-array>
     <string-array name="account">
-        <item>Счет 1</item>
-        <item>Счет 2</item>
+        <item>Тинькофф</item>
+        <item>ВТБ</item>
+        <item>Сбер</item>
 
     </string-array>
 

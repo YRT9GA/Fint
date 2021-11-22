@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorSideBg"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lin_layout_head"
-        android:background="@drawable/bg_nav_wth_sh1"
+        android:background="@color/colorBg"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,23 +31,25 @@
                 android:textSize="20dp" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginLeft="265dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="14dp"
                 android:layout_marginRight="16dp"
-                android:src="@drawable/ic_head_profile" />
+                android:foregroundTint="#511414"
+                android:src="@drawable/ic_profile"
+                android:tint="@color/colorText" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical"
-            android:background="@drawable/layout_bg">
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -56,9 +60,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="8dp"
                     android:text="5 000 000 Р"
-                    android:textColor="@color/cardview_light_background"
+                    android:textColor="@color/colorText"
                     android:textSize="28sp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -66,14 +70,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="8dp"
-                    android:background="@drawable/layout_bg_blue"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
                     android:text=" + 174 455 Р"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorText"
                     android:textSize="16sp"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -86,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginBottom="6dp"
+                    android:layout_marginBottom="11dp"
                     android:text="Текущий баланс"
                     android:textColor="#B6B5B5"
                     android:textSize="14sp"
@@ -96,13 +100,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="6dp"
                     android:text=" за месяц"
                     android:textColor="#B6B5B5"
                     android:textSize="14sp"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -114,6 +118,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -136,18 +141,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@drawable/layout_bg_blue"
-                    android:text=" +15%"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    app:layout_constraintTop_toTopOf="@+id/tv_income"
-                    app:layout_constraintLeft_toRightOf="@+id/tv_income" />
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -175,7 +169,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:text="125 545 Р"
                     android:id="@+id/tv_outcome"
@@ -184,24 +178,12 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@drawable/layout_bg_red"
-                    android:text=" +12%"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    app:layout_constraintTop_toTopOf="@+id/tv_outcome"
-                    app:layout_constraintLeft_toRightOf="@+id/tv_outcome" />
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginRight="53dp"
+                    android:layout_marginLeft="8dp"
                     android:paddingBottom="8dp"
                     android:text="Расходы за месяц"
                     android:textColor="#B6B5B5"
@@ -219,31 +201,33 @@
     </LinearLayout>
 
 
-
-
-
-
-
-
     <Switch
         android:id="@+id/main_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:thumb="@drawable/thumb1"
-        android:track="@drawable/track"
-        android:textOn="Займы"
-        android:textOff="Деньги"
+        android:layout_width="376dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
         android:showText="true"
-        android:layout_marginTop="16dp"
+        android:textColor="@color/colorText"
+        android:textColorHint="#FFFFFF"
+        android:textOff="Деньги"
+        android:textOn="Займы"
+        android:textSize="14sp"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:thumb="@drawable/thumb_big"
+        android:track="@drawable/track_big"
+        android:padding="1dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lin_layout_head"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_layout_head" />
 
     <ScrollView
-        android:layout_height="500dp"
+        android:layout_marginTop="18dp"
+        android:layout_height="0dp"
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@id/main_switch"
-        android:layout_marginBottom="50dp"        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp">
 
 
         <LinearLayout
@@ -253,16 +237,16 @@
 
 
             <TextView
+                android:id="@+id/tv_cash_head"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_cash_head"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/cash"
+                android:textColor="#80ECEFF1"
                 android:textSize="14sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_switch"/>
+                app:layout_constraintTop_toBottomOf="@+id/main_switch" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/cash_recycler_View"
@@ -275,9 +259,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_debt_head"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
+                android:textColor="#80ECEFF1"
                 android:text="@string/debt"
                 android:textSize="14sp"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -294,9 +279,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_cred_head"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
+                android:textColor="#80ECEFF1"
                 android:text="@string/cred_cards"
                 android:textSize="14sp"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -313,9 +299,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_bank_head"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
+                android:textColor="#80ECEFF1"
                 android:text="@string/bank_acc"
                 android:textSize="14sp"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -332,9 +319,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_cur_head"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
+                android:textColor="#80ECEFF1"
                 android:text="@string/exc_rates"
                 android:textSize="14sp"
                 app:layout_constraintLeft_toLeftOf="parent"

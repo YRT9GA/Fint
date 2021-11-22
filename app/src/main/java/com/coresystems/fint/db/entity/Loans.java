@@ -1,4 +1,4 @@
-/*
+
 package com.coresystems.fint.db.entity;
 
 import androidx.room.ColumnInfo;
@@ -28,4 +28,3 @@ public class Loans {
     @ColumnInfo(name = "comment")
     public String comment;
 }
-*/

@@ -1,4 +1,4 @@
-/*
+
 package com.coresystems.fint.db;
 
 import androidx.lifecycle.LiveData;
@@ -25,4 +25,4 @@ public interface FintDao {
     @Query("SELECT * FROM `transaction` ORDER BY 'id_transaction' ASC")
     LiveData<List<Transaction>> getTransactions();
 }
-*/
+

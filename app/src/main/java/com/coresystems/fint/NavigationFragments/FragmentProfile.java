@@ -23,7 +23,7 @@ public class FragmentProfile extends Fragment {
     TextView langTv;
     TextView passwordTv;
     TextView currencyTv;
-    TextView cattegoryTv;
+    TextView categoryTv;
     TextView profileTv;
     TextView accountTv;
 
@@ -51,19 +51,13 @@ public class FragmentProfile extends Fragment {
                 }
             });
 
-        currencyTv = root.findViewById(R.id.currency_tv);
+        ;
 
-        currencyTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), CurrencyActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        cattegoryTv = root.findViewById(R.id.cattegory_tv);
 
-        cattegoryTv.setOnClickListener(new View.OnClickListener() {
+        categoryTv = root.findViewById(R.id.cattegory_tv);
+
+        categoryTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), CattegoryActivity.class);

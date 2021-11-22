@@ -3,208 +3,301 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray">
+    android:background="@color/colorBg">
 
 
     <LinearLayout
+        android:id="@+id/line0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginRight="16dp">
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="8dp"
-            android:text="@string/acc"
+            android:font="@font/robotoregular"
+            android:text="Счет списания"
+            android:textColor="#B6B5B5"
+            android:textSize="14sp"             />
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Баланс счета"
+            android:textColor="#B6B5B5"
+            android:font="@font/robotoregular"
             android:textSize="14sp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:orientation="horizontal">
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/acc_name_tv"
-                android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@id/line0"
+        app:layout_constraintLeft_toLeftOf="@id/line0"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/layout_bg">
+
+            <Spinner
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="8dp"
                 android:text="Тинькофф"
-                android:textColor="#333333"
-                android:textSize="14sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/layout_bg">
 
             <TextView
-                android:id="@+id/acc_sum_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="158dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:text="18 769 ₽"
-                android:textColor="#00A3FF"
+                android:textColor="@color/colorText"
                 android:textSize="16sp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/ar_dwn" />
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="7dp"
-            android:src="@drawable/line328" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="24dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/category"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="148dp"
-                android:text="@string/data"
-                android:textSize="14sp" />
 
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp">
-
-            <TextView
-                android:id="@+id/cat_name_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ипотека"
-                android:textColor="#333333"
-                android:textSize="16sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/ar_dwn" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="23dp"
-                android:text="20.12.2020"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/ar_dwn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="7dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/line200" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:src="@drawable/line112" />
-
-
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/sum" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="7dp">
-
-            <EditText
-                android:layout_width="313dp"
-                android:layout_height="wrap_content"
-                android:hint="35000" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="₽"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/com_ea_et"
-            android:layout_width="328dp"
-            android:layout_height="108dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/field_border"
-            android:ems="0"
-            android:hint="@string/Commentary"
-            android:inputType="textMultiLine"
-            android:lines="5"
-            android:paddingBottom="24dp" />
 
 
     </LinearLayout>
 
 
-    <Button
+    <TextView
+        android:id="@+id/cat_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:font="@font/rubikregular"
+        android:text="Категория"
+        android:textColor="#B6B5B5"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/spin_lin"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/cat_name"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_add_bg"
+        android:background="@drawable/layout_bg">
+
+        <Spinner
+            android:id="@+id/spin_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorText"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@id/spin_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/cat_name_tv"
+            android:layout_width="200dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:font="@font/robotoregular"
+            android:text="Сумма списания"
+            android:textColor="#B6B5B5"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Дата списания"
+            android:textColor="#B6B5B5"
+            android:font="@font/robotoregular"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/layout_bg">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                android:paddingTop="8dp"
+                android:hint="@string/analytics"
+                android:backgroundTint="@android:color/transparent"
+                android:inputType="number"
+                android:textColorHint="#B6B5B5"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/balance_con_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/layout_bg">
+
+            <TextView
+                android:id="@+id/date_income_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/data"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commentary_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Commentary"
+        android:textColor="#B6B5B5"
+        app:layout_constraintTop_toBottomOf="@id/line3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"/>
+
+
+
+
+
+
+
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/commentary_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="328dp"
+        android:layout_height="112dp"
+        android:padding="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:textColorHint="#B6B5B5"
+        android:textColor="@color/colorText"
+        android:hint="   Комментарий"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="#37474F"/>
+
+
+    <Button
+        android:id="@+id/save_oa_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="#37474F"
         android:text="Сохранить"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
