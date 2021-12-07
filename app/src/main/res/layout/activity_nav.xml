@@ -3,388 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBg">
+
+  <FrameLayout
+      android:id="@+id/nav_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="@id/bottom_navigation"
+      />
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottom_navigation"
+      android:layout_width="match_parent"
+      android:layout_height="83dp"
+      app:itemIconTint="@color/colorText"
+      android:background="@drawable/bottom_menu_new2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:menu="@menu/menu_bottom_navigation" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/floatingActionButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="45dp"
+      android:clickable="true"
+      android:onClick="onClick"
+      android:src="@drawable/fabbtnnew"
+      app:backgroundTint="@color/colorPrimaryDark"
+      app:fabSize="normal"
+      app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:maxImageSize="56dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lin_layout_head"
-        android:background="@drawable/bg_nav_wth_sh1"
-        android:orientation="vertical"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:id="@+id/lin_layout_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="14dp"
-                android:text="@string/main"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="20dp" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="265dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="16dp"
-                android:src="@drawable/ic_head_profile" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            android:orientation="vertical"
-            android:background="@drawable/layout_bg">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="14dp"
-                android:text="5 000 000 Р"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="28sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/layout_bg_blue"
-                android:text=" + 174 455 Р"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="6dp"
-                android:text="Текущий баланс"
-                android:textColor="#B6B5B5"
-                android:textSize="14sp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="6dp"
-                android:text=" за месяц"
-                android:textColor="#B6B5B5"
-                android:textSize="14sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingRight="8dp"
-                android:layout_marginRight="8dp"
-                android:background="@drawable/layout_bg">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="300 000 Р"
-                    android:id="@+id/tv_income"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="16sp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@drawable/layout_bg_blue"
-                    android:text=" +15%"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    app:layout_constraintTop_toTopOf="@+id/tv_income"
-                    app:layout_constraintLeft_toRightOf="@+id/tv_income" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginRight="53dp"
-                    android:paddingBottom="8dp"
-                    android:text="Доходы за месяц"
-                    android:textColor="#B6B5B5"
-                    android:textSize="14sp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_income" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="8dp"
-                android:paddingRight="8dp"
-                android:background="@drawable/layout_bg">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="125 545 Р"
-                    android:id="@+id/tv_outcome"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="16sp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="@drawable/layout_bg_red"
-                    android:text=" +12%"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    app:layout_constraintTop_toTopOf="@+id/tv_outcome"
-                    app:layout_constraintLeft_toRightOf="@+id/tv_outcome" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginRight="53dp"
-                    android:paddingBottom="8dp"
-                    android:text="Расходы за месяц"
-                    android:textColor="#B6B5B5"
-                    android:textSize="14sp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_outcome" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
-
-
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
-    <Switch
-        android:id="@+id/main_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:thumb="@drawable/thumb1"
-        android:track="@drawable/track"
-        android:textOn="Займы"
-        android:textOff="Деньги"
-        android:showText="true"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lin_layout_head"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <ScrollView
-        android:layout_height="500dp"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/main_switch"
-        android:layout_marginBottom="50dp"        >
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_cash_head"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/cash"
-        android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_switch"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/cash_recycler_View"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cash_head"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_debt_head"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/debt"
-        android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cash_recycler_View"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/debt_recycler_View"
-        app:layout_constraintTop_toBottomOf="@+id/tv_debt_head"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_cred_head"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/cred_cards"
-        android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/debt_recycler_View"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/cred_recycler_View"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cred_head"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_bank_head"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/bank_acc"
-        android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cred_recycler_View"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bank_recycler_View"
-        app:layout_constraintTop_toBottomOf="@+id/tv_bank_head"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_cur_head"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/exc_rates"
-        android:textSize="14sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bank_recycler_View"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/cur_recycler_View"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cur_head"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-
-        </LinearLayout>
-
-
-
-
-</ScrollView>
-
-
-
-
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bottom_menu_bg_test2"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:menu="@menu/menu_bottom_navigation" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
-
-        android:backgroundTint="#03A9F4"
-        android:clickable="true"
-        android:onClick="onClick"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:maxImageSize="40dp"
-        app:srcCompat="@drawable/ic_float_bg" />
 
 
 

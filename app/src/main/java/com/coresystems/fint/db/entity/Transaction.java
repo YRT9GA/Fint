@@ -1,3 +1,4 @@
+
 package com.coresystems.fint.db.entity;
 
 import androidx.room.ColumnInfo;
@@ -38,3 +39,4 @@ public class Transaction {
         this.idTransaction = idTransaction;
     }
 }
+

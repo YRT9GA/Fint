@@ -1,3 +1,5 @@
+/*
+
 package com.coresystems.fint.db;
 
 import android.content.Context;
@@ -62,8 +64,12 @@ public abstract class FintDatabase extends RoomDatabase {
                 dao.insert(transaction);
                 transaction = new Transaction(1);
                 dao.insert(transaction);
+                
+
+
             });
         }
+
     };
 
 //        // SongDao is a class annotated with @Dao.
@@ -72,5 +78,10 @@ public abstract class FintDatabase extends RoomDatabase {
 //        abstract public ArtistDao getArtistDao();
 //        // SongAlbumDao is a class annotated with @Dao.
 //        abstract public SongAlbumDao getSongAlbumDao();
+//    Account testAccount = new Account(1,1,"Тинько",150000);
+
+
 
 }
+*/
+

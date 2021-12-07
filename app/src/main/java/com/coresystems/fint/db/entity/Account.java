@@ -1,3 +1,4 @@
+
 package com.coresystems.fint.db.entity;
 
 import androidx.room.ColumnInfo;
@@ -22,5 +23,31 @@ public class Account {
         this.idCur = idCur;
         this.accountName = accountName;
         this.currentValue = currentValue;
+
+    }
+
+    public long getIdAccount() {
+        return idAccount;
+    }
+
+    public int getIdCur() {
+        return idCur;
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public long getCurrentValue() {
+        return currentValue;
     }
 }
+
+/*    public Account(int idAccount, int idCur, String accountName, long currentValue) {
+        this.idAccount = idAccount;
+        this.idCur = idCur;
+        this.accountName = accountName;
+        this.currentValue = currentValue;
+    }
+}
+*/

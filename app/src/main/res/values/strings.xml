@@ -2,8 +2,9 @@
     <string name="app_name">Fint</string>
     <string name="main">Главная</string>
     <string name="analytics">Аналитика</string>
+    <string name="history">История</string>
     <string name="plan">План</string>
-    <string name="profile">Профиль</string>
+    <string name="profile">Настройки</string>
     <string name="category1">Категория 1</string>
     <string name="cash">Наличные</string>
     <string name="debt">Дебетовые карты</string>
@@ -16,6 +17,15 @@
     <string name="sum">Сумма</string>
     <string name="Commentary">  Комментарий</string>
     <string name="incomeadd">Добавить доход</string>
+    <string name="outcomeadd">Добавить расход</string>
+    <string name="transfer">Перевод между счетами</string>
+    <string name="loans">Займы</string>
+    <string name="settings">Настройки</string>
+    <string name="language">Язык</string>
+    <string name="password">Пароль</string>
+    <string name="сurrency">Валюта по умолчанию</string>
+    <string name="account">Счет</string>
+    <string name="сattegory">Категории</string>/>
 
 
     <string-array name="category">
@@ -88,8 +98,60 @@
         <item>курс: 75,36 ₽</item>
     </string-array>
 
+    <string-array name="value">
+        <item>Рубли</item>
+        <item>Доллары</item>
+        <item>Евро</item>
+    </string-array>
 
+    <string-array name="language">
+        <item>Русский</item>
+        <item>Английский</item>
+    </string-array>
 
+    <string-array name="сurrency">
+        <item>Рубль</item>
+        <item>Евро</item>
+        <item>Доллар</item>
+    </string-array>
+
+    <string-array name="password">
+        <item>Установить пароль</item>
+        <item>Сбросить пароль</item>
+    </string-array>
+
+    <string-array name="cattegory">
+        <item>Питание</item>
+        <item> Транспорт</item>
+        <item>Хозяйство</item>
+        <item>Развлечения</item>
+        <item>Путешествия</item>
+        <item>Здоровье</item>
+        <item>Спорт</item>
+        <item>Образование</item>
+        <item>Внешний вид</item>
+        <item>Связь</item>
+        <item>Автомобиль</item>
+        <item>Хобби</item>
+        <item>Благотворительность</item>
+        <item>Прочие расходы</item>
+        <item>Зарплата</item>
+        <item>Стипендия</item>
+        <item>Оказание услуг</item>
+        <item>Прочие доходы</item>
+    </string-array>
+
+    <string-array name="profile">
+        <item>Профиль 1</item>
+        <item>Профиль 2</item>
+
+    </string-array>
+    <string-array name="account">
+        <item>Тинькофф</item>
+        <item>ВТБ</item>
+        <item>Сбер</item>
+
+    </string-array>
 
 
 

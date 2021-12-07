@@ -1,3 +1,4 @@
+
 package com.coresystems.fint.db.entity;
 
 import androidx.annotation.NonNull;
@@ -19,3 +20,4 @@ public class TransactionType {
         this.typeName = typeName;
     }
 }
+
