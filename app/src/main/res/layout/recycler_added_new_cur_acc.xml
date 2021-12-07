@@ -3,8 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="42dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< Updated upstream
     android:layout_marginBottom="1dp"
     android:background="@color/colorBg">
+=======
+    >
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/tv_cur_name"
