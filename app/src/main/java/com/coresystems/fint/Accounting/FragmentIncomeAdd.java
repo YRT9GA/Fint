@@ -1,19 +1,16 @@
 package com.coresystems.fint.Accounting;
 
 import android.app.DatePickerDialog;
-import android.app.Fragment;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
-
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-
+import androidx.fragment.app.Fragment;
 
 import com.coresystems.fint.R;
 
@@ -22,21 +19,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class IncomeAdd extends Fragment {
-
-    Button saveIncomeBtn;
-    TextView dateEt;
+public class FragmentIncomeAdd extends Fragment {
 
     final Calendar myCalendar = Calendar.getInstance();
 
 
-    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         View root = inflater.inflate(R.layout.fragment_income_add, container, false);
-        // FintDatabase db Room.databaseBuilder(getApplicationContext(),FintDatabase.class, "fint-" +
-        //         "database")
 
         String today = new SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(new Date());
 
@@ -75,10 +65,6 @@ public class IncomeAdd extends Fragment {
         });
 
 
-
-
         return root;
     }
-    }
-
-
+}

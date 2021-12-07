@@ -60,15 +60,6 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/lang_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Язык"
-        android:layout_marginBottom="28dp"
-        android:textColor="@color/colorText"
-        android:textSize="18sp" />
-
-    <TextView
         android:id="@+id/cattegory_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

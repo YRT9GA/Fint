@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@drawable/logotype"
         android:label="Fint v03"
+        android:name=".FintApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -27,33 +28,7 @@
 
 
 
-        <activity android:name=".Accounting.IncomeAdd"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/incomeadd"
-            android:theme="@style/AppTheme">
 
-        </activity>
-
-        <activity android:name=".Accounting.OutcomeAdd"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/outcomeadd"
-            android:theme="@style/AppTheme">
-
-        </activity>
-
-        <activity android:name=".Accounting.LoansActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/loans"
-            android:theme="@style/AppTheme">
-
-        </activity>
-
-        <activity android:name=".Accounting.TransferActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/transfer"
-            android:theme="@style/AppTheme">
-
-        </activity>
 
     <activity android:name=".LoginActivity">
 
@@ -101,6 +76,13 @@
         <activity android:name=".AddAccountActivity"
             android:parentActivityName=".AccountActivity"
             android:label="Добавить счет"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity android:name=".Accounting.TabActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Операции"
             android:theme="@style/AppTheme">
 
         </activity>

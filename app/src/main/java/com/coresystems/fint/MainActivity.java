@@ -9,12 +9,14 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import com.coresystems.fint.Accounting.IncomeAdd;
 import com.coresystems.fint.Accounting.LoansActivity;
+import com.coresystems.fint.Accounting.TabActivity;
 import com.coresystems.fint.Accounting.TransferActivity;
 import com.coresystems.fint.Accounting.OutcomeAdd;
 import com.coresystems.fint.NavigationFragments.FragmentAnalytics;
@@ -60,7 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             R.drawable.arrow_down_1,
             };
 
-
+    //для блокировки двойного клика на кнопку
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -218,37 +221,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //
 //    }
 
+//    @Override
+//    public void onClick(View view) {
+//        AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
+//        a_builder.setTitle("Выберите действие");
+//        a_builder.setItems(new CharSequence[]
+//                        {"Перевод", "Долг", "Доход", "Расход"},
+//                new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        // The 'which' argument contains the index position
+//                        // of the selected item
+//                        switch (which) {
+//                            case 0:
+//                                Intent intent = new Intent(MainActivity.this, TransferActivity.class);
+//                        startActivity(intent);
+//                            break;
+//                            case 1:
+//                                Intent intent2 = new Intent(MainActivity.this, LoansActivity.class);
+//                        startActivity(intent2);
+//                            break;
+//                            case 2:
+//                                Intent intent3 = new Intent(MainActivity.this, IncomeAdd.class);
+//                        startActivity(intent3);
+//                            break;
+//                            case 3:
+//                                Intent intent4 = new Intent(MainActivity.this, OutcomeAdd.class);
+//                        startActivity(intent4);
+//                            break;
+//                        }
+//                    }
+//                });
+//        a_builder.create().show();
+//    }
+
     @Override
     public void onClick(View view) {
-        AlertDialog.Builder a_builder = new AlertDialog.Builder(this);
-        a_builder.setTitle("Выберите действие");
-        a_builder.setItems(new CharSequence[]
-                        {"Перевод", "Долг", "Доход", "Расход"},
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // The 'which' argument contains the index position
-                        // of the selected item
-                        switch (which) {
-                            case 0:
-                                Intent intent = new Intent(MainActivity.this, TransferActivity.class);
-                        startActivity(intent);
-                            break;
-                            case 1:
-                                Intent intent2 = new Intent(MainActivity.this, LoansActivity.class);
-                        startActivity(intent2);
-                            break;
-                            case 2:
-                                Intent intent3 = new Intent(MainActivity.this, IncomeAdd.class);
-                        startActivity(intent3);
-                            break;
-                            case 3:
-                                Intent intent4 = new Intent(MainActivity.this, OutcomeAdd.class);
-                        startActivity(intent4);
-                            break;
-                        }
-                    }
-                });
-        a_builder.create().show();
+        //mis-clicking prevention, using threshold of 1000 ms
+        if (SystemClock.elapsedRealtime() - mLastClickTime < 500){
+            return;
+        }
+        mLastClickTime = SystemClock.elapsedRealtime();
+        Intent intent = new Intent(MainActivity.this, TabActivity.class);
+        startActivity(intent);
     }
 
 

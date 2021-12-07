@@ -31,15 +31,7 @@ public class FragmentProfile extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        langTv = root.findViewById(R.id.lang_tv);
 
-        langTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), LanguageActivity.class);
-                startActivity(intent);
-            }
-        });
 
             passwordTv = root.findViewById(R.id.password_tv);
 
