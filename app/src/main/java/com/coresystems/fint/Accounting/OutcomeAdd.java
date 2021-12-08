@@ -17,13 +17,7 @@ public class OutcomeAdd extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_outcome_add, container, false);
 
-<<<<<<< Updated upstream
-=======
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_income_add);
->>>>>>> Stashed changes
+
 
         return root;
     }

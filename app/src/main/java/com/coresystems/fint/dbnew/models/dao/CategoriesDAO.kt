@@ -15,6 +15,12 @@ interface CategoriesDAO {
     @Query("SELECT * FROM ${CategoriesContract.TABLE_NAME}")
     fun getAllCategories():List<CategoriesEntity>
 
+    @Query("SELECT  name FROM ${CategoriesContract.TABLE_NAME}")
+    fun getAllNameCategories():List<String>
+
+    @Query("SELECT name FROM ${CategoriesContract.TABLE_NAME} WHERE isOutcome > 0")
+    fun getAllOutcomeNameCategories():List<String>
+
     @Insert(entity = CategoriesEntity::class, onConflict = OnConflictStrategy.IGNORE)
     fun addCategories(categoriesEntity: CategoriesEntity)
 

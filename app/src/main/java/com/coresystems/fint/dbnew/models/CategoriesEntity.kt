@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class CategoriesEntity(
     @PrimaryKey
     @ColumnInfo(name = CategoriesContract.Columns.ID)
-    val id: Long,
+    val id: Int,
     @ColumnInfo(name = CategoriesContract.Columns.name)
     val name: String,
     @ColumnInfo(name = CategoriesContract.Columns.isOutcome)
