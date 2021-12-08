@@ -1,6 +1,7 @@
 package com.coresystems.fint.dbnew.models.dao
 
 import android.content.Context
+import android.graphics.Typeface.createFromAsset
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
@@ -21,7 +22,9 @@ object NewDatabase {
     fun init (context: Context){
         instance = Room.databaseBuilder(context,
         TestDatabase::class.java, TestDatabase.DB_NAME)
-            .createFromAsset("database/Transactions.db")
+            .createFromAsset("database/categories.db")
+            //Вывод бд на главный поток, временно
+            .allowMainThreadQueries()
             .build()
     }
 
