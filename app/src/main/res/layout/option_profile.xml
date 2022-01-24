@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorBg">
 
     <ListView
         app:layout_constraintTop_toTopOf="parent"
@@ -11,6 +12,15 @@
         android:id="@+id/profilelist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spin_cat_in"
+        app:layout_constraintTop_toBottomOf="@id/profilelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
 
 
     <Button

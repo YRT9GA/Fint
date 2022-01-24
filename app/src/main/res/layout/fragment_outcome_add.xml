@@ -133,7 +133,7 @@
         android:background="@drawable/layout_bg">
 
     <Spinner
-        android:id="@+id/spin_cat"
+        android:id="@+id/spin_cat_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"

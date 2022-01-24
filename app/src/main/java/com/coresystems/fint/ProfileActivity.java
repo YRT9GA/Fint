@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 
 public class ProfileActivity extends Activity {
 
@@ -27,6 +28,15 @@ public class ProfileActivity extends Activity {
 
         // присваиваем адаптер списку
         lvMain.setAdapter(adapter);
+
+
+        Spinner spinner = (Spinner) findViewById(R.id.spin_cat_in);
+
+
+        ArrayAdapter<String> spinAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.category));
+        spinAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(spinAdapter);
 
     }
 

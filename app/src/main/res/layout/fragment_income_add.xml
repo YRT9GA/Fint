@@ -64,6 +64,7 @@
             android:background="@drawable/layout_bg">
 
             <Spinner
+                android:id="@+id/spin_acc_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -132,13 +133,12 @@
         android:background="@drawable/layout_bg">
 
         <Spinner
-            android:id="@+id/spin_cat"
+            android:id="@+id/spin_cat_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
             android:layout_margin="8dp"
             android:textColor="@color/colorText"
-            />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
